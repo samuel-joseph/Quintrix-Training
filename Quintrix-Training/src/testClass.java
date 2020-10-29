@@ -1,10 +1,11 @@
 
 public class testClass {
 	public static void main(String[] args) {
-		try {
-		System.out.println("Hello World");
-		} catch(Exception e){
-			System.out.print("Test");
+		String[] ArrayList = {"Mark","John","Michael"};
+		
+		for(int i = 0; i<ArrayList.length;i++) {
+			System.out.println(ArrayList[i]);
 		}
+		
 	}
 }
