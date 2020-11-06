@@ -1,13 +1,17 @@
 
 public class testClass {
 	public static void main(String[] args) {
-		String[] ArrayList = {"Mark","John","Michael"};
-		
-		for(String arr : ArrayList) {
-			System.out.println(arr);
-		}
-		for(int i = 0; i<ArrayList.length;i++) {
-			System.out.println(ArrayList[i]);
-		}
+//		String[] ArrayList = {"Mark","John","Michael"};
+//		
+//		for(String arr : ArrayList) {
+//			System.out.println(arr);
+//		}
+//		for(int i = 0; i<ArrayList.length;i++) {
+//			System.out.println(ArrayList[i]);
+//		}
+		System.out.println("Hello World");
 	}
+	
+	
+	
 }
