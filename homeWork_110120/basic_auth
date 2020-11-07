@@ -1,0 +1,19 @@
+Test Case ID: 2
+Run Result ID: 1
+Basic Authentication
+
+
+----------------
+Summary:
+A page where a user is only allowed to login once the user is able to supply the correct username and password.
+
+Setup:
+https://the-internet.herokuapp.com/basic_auth
+
+Steps:
+1. In username field enter admin
+2. In password field enter admin
+3. Click login
+
+Result:
+I tried to supply wrong username and password and the page denied me the access, I supplied the correct username and password and it delivered me to the page.

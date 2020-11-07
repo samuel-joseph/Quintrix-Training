@@ -1,0 +1,19 @@
+Test Case ID: 17
+Run Result ID: 1
+Login
+
+
+----------------
+Summary:
+Tests to verify if it logs in the user correctly after supplying the correct username and password and also check if the secure page is authentic.
+
+Setup:
+https://the-internet.herokuapp.com/login
+
+Steps:
+1. Click the username field then type tom smith as username.
+2. Click the password field then type SuperSecretPassword! as password. 
+3. Click login.
+
+Result:
+After supplying the correct username and password the page logs me into the secure page wherein a logout button is available for the user to clicked if the user decides to logout from the secure page. I revert back to login page after clicking logout.

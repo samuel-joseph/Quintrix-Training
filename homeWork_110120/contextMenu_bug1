@@ -1,0 +1,25 @@
+Bug ID: 1
+Test Case ID: 5
+Run Result ID: 2
+Assigned To: Dennis
+Bug Status: New
+Severity: Low
+Priority: Low
+Javascript Alert not showing up
+----------------------------------------------------------
+Summary:
+Javascript alert not showing up as the user inspects the DOM then right click.
+
+Setup:
+1. http://the-internet.herokuapp.com/login
+
+Steps:
+1. Right click anywhere then click inspect.
+2. Right click the box.
+
+
+Expected Result:
+Javascript alert pops up.
+
+Actual Result:
+Nothing happens as you right click the box.
