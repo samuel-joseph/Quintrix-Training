@@ -1,0 +1,16 @@
+Test Case ID: 26
+Run Result ID: 1
+Infinite Scroll
+
+----------------
+Summary:
+Test the page if clicking the link actually opens a new window.
+
+Setup:
+https://the-internet.herokuapp.com/windows
+
+Steps:
+1. Click "Click Here"
+
+Result:
+	The page opens a new window as the user click the link.

@@ -1,0 +1,22 @@
+Test Case ID: 32
+Run Result ID: 1
+TinyMCE WYSIWYG Editor
+
+----------------
+Summary:
+Test and do automation for locating every element.
+
+Setup:
+https://the-internet.herokuapp.com/tinymce
+
+Steps:
+1. Type in any string of words within the editor
+2. Highlight the words and press BOLD
+3. Click Format
+4. Click Underline
+5. Click Undo
+6. Click File
+7. Click New Document
+
+Result:
+	Editor works accordingly further automation testing is required.

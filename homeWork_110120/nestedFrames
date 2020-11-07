@@ -1,0 +1,18 @@
+Test Case ID: 27
+Run Result ID: 1
+Infinite Scroll
+
+----------------
+Summary:
+Test and observe the nested frames.
+
+Setup:
+https://the-internet.herokuapp.com/nested_frames
+
+Steps:
+1. Right click
+2. Inspect
+3. Check DOM
+
+Result:
+	The nested frames looks interesting, further testing required for automation.

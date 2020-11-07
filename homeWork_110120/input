@@ -1,0 +1,21 @@
+Test Case ID: 22
+Run Result ID: 1
+Infinite Scroll
+
+----------------
+Summary:
+Test and observe the number being incremented or decremented.
+
+Setup:
+https://the-internet.herokuapp.com/input 
+
+Steps:
+1. Enter a number in the input place holder.
+2. At the right corner of the place holder click the arrow up
+3. At the right corner of the place holder click the arrow down
+4. Empty the input placeholder.
+5. Repeat step 1
+6. Repeat step 2
+
+Result:
+	The number inside the placeholder when clicked up increases by one and decreases by 1 when clicked down. Likewise with an empty placeholder wherein it starts with a 0 and if you clicked up it adds one and decreases one when you clicked down.
