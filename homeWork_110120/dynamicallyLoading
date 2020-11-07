@@ -1,0 +1,23 @@
+Test Case ID: 11
+Run Result ID: 1
+Dynamic Loading
+
+----------------
+Summary:
+Learn the difference between the page that has an element which is dynamic but with hidden element and a page wherein it is dynamically loading.
+
+Setup:
+https://the-internet.herokuapp.com/dynamic_loading
+
+Steps:
+1. Click the Example 1.
+2. Right click the page then hit inspect.
+3. Click the "Start" button.
+4. Revert back to original /dynamic_loading
+5. Click the Example 2.
+6. Right click the page then hit inspect.
+7. Click "Start" button.
+
+Result:
+	In the example 1 page as I check the inspect, there already exist an element which is hidden to the page it has a class called "Finish" property of hidden with "Hello World" as title but as soon as you clicked start from example 1 it changed its property hidden to visible making it visible to the page and the element with "Start" title disappears to the page.  
+	With example 2 page, this shows a real dynamic loading where in there is no hidden element at the back and as you clicked the start button it created it's own element which has a title "Hello World".

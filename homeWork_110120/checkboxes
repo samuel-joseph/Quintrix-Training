@@ -1,0 +1,18 @@
+Test Case ID: 4
+Run Result ID: 1
+Checkboxes
+
+----------------
+Summary:
+Test to check if the empty checkbox that's been clicked is would have a check in it also test to see if you clicked the checkbox with a check would uncheck it.
+
+Setup:
+https://the-internet.herokuapp.com/checkboxes
+
+Steps:
+1. Click the unchecked checkbox 1 and checkbox 2.
+2. Click the checked checkbox 1. 
+3. Click the checked checkbox 2.
+
+Result:
+Checkboxes are capable of changing into checked checkbox when clicked and also capable of unchecking the checkboxes if the user intends to clicked the checked box.

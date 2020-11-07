@@ -1,0 +1,20 @@
+Test Case ID: 15
+Run Result ID: 1
+File Upload
+
+----------------
+Summary:
+Test and observe two kinds of uploads.
+
+Setup:
+https://the-internet.herokuapp.com/upload 
+
+Steps:
+1. Click "Choose file".
+2. Choose a file within your machine directory.
+3. Click Submit.
+4. Drag any file from your local machine and drop within the box.
+5. Hit upload.
+
+Result:
+There are two kinds of uploading of files one is where user can just check out from his file directory and the second is user can drag and drop a file from his local machine. Uploading a file using drag and drop then upload gives you an internal server error.
