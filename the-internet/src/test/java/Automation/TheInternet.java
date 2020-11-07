@@ -54,6 +54,22 @@ public class TheInternet {
 	  Assert.assertEquals(selectedOption, expectedSelection);
   }
   
+  
+  @Test
+  public void t5AddRemoveElement() {
+	  //Arrange
+	  String url = "http://the-internet.herokuapp.com/";
+	  String expectedSelection = "Delete";
+	  
+	  //Act
+	  String selectedOption = new AddRemoveElement(driver, url)
+			  .navigate()
+			  .select()
+			  .getOption(expectedSelection);
+	  //Assert
+	  Assert.assertEquals(selectedOption, expectedSelection);
+  }
+  
   @BeforeTest
   public void beforeTest() {
 	  System.setProperty("webdriver.chrome.driver", "/Users/joe/git/Quintrix-Training/chromedriver");
