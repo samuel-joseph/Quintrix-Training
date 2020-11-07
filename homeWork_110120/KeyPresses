@@ -1,0 +1,18 @@
+Test Case ID: 25
+Run Result ID: 1
+Infinite Scroll
+
+----------------
+Summary:
+Test the keypresses if what the user input inside the keypress is actually being reflected at the bottom.
+
+Setup:
+https://the-internet.herokuapp.com/key_presses
+
+Steps:
+1. At the input placeholder type any key.
+2. Press TAB
+3. Press Space
+
+Result:
+	The page is accurate so far as to typing in what the user has inputted.

@@ -1,0 +1,17 @@
+Test Case ID: 29
+Run Result ID: 1
+Shadow DOM
+
+----------------
+Summary:
+Test and observe the page.
+
+Setup:
+https://the-internet.herokuapp.com/shadowdom
+
+Steps:
+1. Right Click and choose inspect
+2. Observe the DOM
+
+Result:
+	Page is working, further automation is required.

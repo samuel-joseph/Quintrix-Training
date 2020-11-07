@@ -1,0 +1,20 @@
+Test Case ID: 3
+Run Result ID: 1
+Challenging DOM
+
+----------------
+Summary:
+Test and do automation for this page clicking the buttons and observing how it works.
+
+Setup:
+https://the-internet.herokuapp.com/challenging_dom
+
+Steps:
+1. Click blue button
+2. Click red button
+3. Click green button
+4. Click edit
+5. Click delete
+
+Result:
+	The three buttons colored red, blue, green are working, clicking them generates a different number at every answer as you hit click. Edit and button are not working. Further automation testing is required.

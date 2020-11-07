@@ -1,0 +1,17 @@
+Test Case ID: 31
+Run Result ID: 1
+Data Tables
+
+----------------
+Summary:
+Test and do automation for locating every element and data within the page.
+
+Setup:
+https://the-internet.herokuapp.com/tables
+
+Steps:
+1. Click edit
+2. Click delete
+
+Result:
+	Actions on either edit or delete are not working, further automation testing is required.
