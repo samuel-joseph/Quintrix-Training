@@ -1,0 +1,31 @@
+Bug ID: 2
+Test Case ID: 35
+Run Result ID: 35
+Assigned To: Dennis
+Bug Status: New
+Severity: Medium
+Priority: Low
+Unable to hit the 'x' or close button of the error message
+----------------------------------------------------------
+Summary:
+When opening the webpage in a mobile device, right after making a mistake at inputting the username and password, I find it impossible to click or tap the close button of the error message as the link to the github repo overlaps the close button.
+
+Setup:
+1. http://the-internet.herokuapp.com/login
+2. Right click then click inspect
+3. Click dropdown Responsive
+4. Choose any mobile device.
+
+Steps:
+1. Click the username input field.
+2. Input a wrong username.
+3. Click the password input field.
+4. Input a wrong password.
+5. Click the 'x' button at the end of the error message.
+
+
+Expected Result:
+Closes the error message while staying at the page.
+
+Actual Result:
+It opens a new web page https://github.com/saucelabs/the-internet instead.
