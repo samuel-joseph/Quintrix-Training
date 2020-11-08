@@ -97,6 +97,7 @@ public class TheInternet {
 		//Assert
 		Assert.assertEquals(selectedOption, expectedSelection);
 	}
+	
 
 	@BeforeTest
 	public void beforeTest() {
