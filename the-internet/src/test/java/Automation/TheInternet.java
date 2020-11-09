@@ -24,7 +24,7 @@ public class TheInternet {
 	}
 
 	@Test
-	public void canNavigateToIndexPage() {
+	public void tc1canNavigateToIndexPage() {
 		// Arrange
 		String expectedPageTitle = "The Internet";
 
@@ -36,19 +36,7 @@ public class TheInternet {
 	}
 
 	@Test
-	public void tc4CanSelectDropdownListItem() {
-		// Arrange
-		String expectedSelection = "Option 2";
-
-		// Act
-		String selectedOption = new DropdownPage(driver, this.url).navigate().select(expectedSelection).getOption();
-
-		// Assert
-		Assert.assertEquals(selectedOption, expectedSelection);
-	}
-
-	@Test
-	public void t5AddRemoveElement() {
+	public void tc2AddRemoveElement() {
 		// Arrange
 		String expectedSelection = "Delete";
 
@@ -59,7 +47,7 @@ public class TheInternet {
 	}
 
 	@Test
-	public void t6BasicAuth() {
+	public void tc3BasicAuth() {
 		// Arrange
 		String expectedSelection = "Congratulations! You must have the proper credentials.";
 
@@ -71,7 +59,7 @@ public class TheInternet {
 	}
 
 	@Test
-	public void t7ChallengingDom() {
+	public void tc4ChallengingDom() {
 		// Arrange
 		String expectedSelection = "Challenging DOM";
 
@@ -84,12 +72,57 @@ public class TheInternet {
 	}
 	
 	@Test
-	public void t9ContextMenu() {
+	public void tc6ContextMenu() {
 		//Arrange
 		String expectedSelection = "Context Menu";
 		
 		//Act
 		String selectedOption = new ContextMenu(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc7DisappearingElements() {
+		//Arrange
+		String expectedSelection = "Disappearing Elements";
+		
+		//Act
+		String selectedOption = new DisappearingElements(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc9CanSelectDropdownListItem() {
+		// Arrange
+		String expectedSelection = "Option 2";
+
+		// Act
+		String selectedOption = new DropdownPage(driver, this.url)
+				.navigate()
+				.select(expectedSelection)
+				.getOption();
+
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc10DragAndDrop() {
+		//Arrange
+		String expectedSelection = "Drag and Drop";
+		
+		//Act
+		String selectedOption = new DragAndDrop(driver, this.url)
 				.navigate()
 				.select()
 				.getOption();
