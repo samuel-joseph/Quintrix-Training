@@ -9,76 +9,138 @@ import org.testng.annotations.AfterTest;
 
 public class TheInternet {
 	private WebDriver driver;
+	String url = "http://the-internet.herokuapp.com/";
+
+	@Test
+	public void canLaunchChromeDriver() {
+		// Arrange
+
+		// Act
+		driver.navigate().to(this.url);
+		String currentURL = driver.getCurrentUrl();
+
+		// Assert
+		Assert.assertEquals(currentURL, url);
+	}
+
+	@Test
+	public void tc1canNavigateToIndexPage() {
+		// Arrange
+		String expectedPageTitle = "The Internet";
+
+		// Act
+		String actualPageTitle = new IndexPage(driver, this.url).navigate().getTitle();
+
+		// Assert
+		Assert.assertEquals(actualPageTitle, expectedPageTitle);
+	}
+
+	@Test
+	public void tc2AddRemoveElement() {
+		// Arrange
+		String expectedSelection = "Delete";
+
+		// Act
+		String selectedOption = new AddRemoveElement(driver, this.url).navigate().select().getOption(expectedSelection);
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+
+	@Test
+	public void tc3BasicAuth() {
+		// Arrange
+		String expectedSelection = "Congratulations! You must have the proper credentials.";
+
+		// Act
+		String selectedOption = new BasicAuth(driver, this.url).navigate().select().getOption();
+
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+
+	@Test
+	public void tc4ChallengingDom() {
+		// Arrange
+		String expectedSelection = "Challenging DOM";
+
+		// Act
+		String selectedOption = new ChallengingDom(driver, this.url).navigate().select().getOption();
+
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+
+	}
 	
-  @Test
-  public void canLaunchChromeDriver() {
-	  //Arrange
-	  String url = "http://the-internet.herokuapp.com/";
-	  
-	  //Act
-	  driver.navigate().to(url);
-	  String currentURL = driver.getCurrentUrl();
-	  
-	  //Assert
-	  Assert.assertEquals(currentURL, url);
-  }
-  
-  @Test
-  public void canNavigateToIndexPage() {
-	  //Arrange
-	  String url = "http://the-internet.herokuapp.com/";
-	  String expectedPageTitle = "The Internet";
-	  
-	  //Act
-	  String actualPageTitle = new IndexPage(driver, url)
-			  .navigate()
-			  .getTitle();
-	  
-	  //Assert
-	  Assert.assertEquals(actualPageTitle, expectedPageTitle);
-  }
+	@Test
+	public void tc6ContextMenu() {
+		//Arrange
+		String expectedSelection = "Context Menu";
+		
+		//Act
+		String selectedOption = new ContextMenu(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc7DisappearingElements() {
+		//Arrange
+		String expectedSelection = "Disappearing Elements";
+		
+		//Act
+		String selectedOption = new DisappearingElements(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc9CanSelectDropdownListItem() {
+		// Arrange
+		String expectedSelection = "Option 2";
 
-  @Test
-  public void tc4CanSelectDropdownListItem() {
-	  //Arrange
-	  String url = "http://the-internet.herokuapp.com/";
-	  String expectedSelection = "Option 2";
-	  
-	  //Act
-	  String selectedOption = new DropdownPage(driver, url)
-			  .navigate()
-			  .select(expectedSelection)
-			  .getOption();
-	  
-	  //Assert
-	  Assert.assertEquals(selectedOption, expectedSelection);
-  }
-  
-  
-  @Test
-  public void t5AddRemoveElement() {
-	  //Arrange
-	  String url = "http://the-internet.herokuapp.com/";
-	  String expectedSelection = "Delete";
-	  
-	  //Act
-	  String selectedOption = new AddRemoveElement(driver, url)
-			  .navigate()
-			  .select()
-			  .getOption(expectedSelection);
-	  //Assert
-	  Assert.assertEquals(selectedOption, expectedSelection);
-  }
-  
-  @BeforeTest
-  public void beforeTest() {
-	  System.setProperty("webdriver.chrome.driver", "/Users/joe/git/Quintrix-Training/chromedriver");
-	  driver = new ChromeDriver();
-  }
+		// Act
+		String selectedOption = new DropdownPage(driver, this.url)
+				.navigate()
+				.select(expectedSelection)
+				.getOption();
 
-  @AfterTest
-  public void afterTest() {
-	  driver.quit();
-  }
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc10DragAndDrop() {
+		//Arrange
+		String expectedSelection = "Drag and Drop";
+		
+		//Act
+		String selectedOption = new DragAndDrop(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+
+	@BeforeTest
+	public void beforeTest() {
+		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
+		driver = new ChromeDriver();
+	}
+
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
 
 }

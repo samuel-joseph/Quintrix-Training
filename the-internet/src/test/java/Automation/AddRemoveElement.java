@@ -20,10 +20,10 @@ public class AddRemoveElement extends PageObjectBase {
 	}
 
 	public AddRemoveElement select() {
-		for (int i = 0; i <= 10; i++) {
+		for (int i = 0; i <= 100; i++) {
 			driver.findElement(By.xpath("//*[@id=\"content\"]/div/button")).click();
 		}
-		for (int i = 0; i <= 9; i++) {
+		for (int i = 0; i <= 99; i++) {
 			driver.findElement(By.xpath("//*[@id=\"elements\"]/button")).click();
 		}
 		return this;
