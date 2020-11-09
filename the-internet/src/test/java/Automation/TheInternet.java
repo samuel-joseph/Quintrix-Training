@@ -101,8 +101,24 @@ public class TheInternet {
 		Assert.assertEquals(selectedOption, expectedSelection);
 	}
 	
+	
 	@Test
-	public void tc9CanSelectDropdownListItem() {
+	public void tc9DragAndDrop() {
+		//Arrange
+		String expectedSelection = "Drag and Drop";
+		
+		//Act
+		String selectedOption = new DragAndDrop(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc10CanSelectDropdownListItem() {
 		// Arrange
 		String expectedSelection = "Option 2";
 
@@ -117,12 +133,12 @@ public class TheInternet {
 	}
 	
 	@Test
-	public void tc10DragAndDrop() {
+	public void tc11DynamicControls() {
 		//Arrange
-		String expectedSelection = "Drag and Drop";
+		String expectedSelection = "It's gone!";
 		
 		//Act
-		String selectedOption = new DragAndDrop(driver, this.url)
+		String selectedOption = new DynamicControls(driver, this.url)
 				.navigate()
 				.select()
 				.getOption();
