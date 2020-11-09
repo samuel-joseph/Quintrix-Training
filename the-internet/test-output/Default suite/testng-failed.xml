@@ -5,9 +5,9 @@
     <classes>
       <class name="Automation.TheInternet">
         <methods>
+          <include name="tc2AddRemoveElement"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="t7ChallengingDom"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>
