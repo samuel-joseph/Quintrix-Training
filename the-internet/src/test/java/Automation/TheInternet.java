@@ -147,6 +147,22 @@ public class TheInternet {
 		Assert.assertEquals(selectedOption, expectedSelection);
 	}
 	
+	@Test
+	public void tc12DynamicLoading() {
+		//Arrange
+		String expectedSelection = "Hello World!";
+		
+		//Act
+		String selectedOption = new DynamicLoading(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+		
+	}
+	
 
 	@BeforeTest
 	public void beforeTest() {
