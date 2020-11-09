@@ -23,12 +23,12 @@ public class DragAndDrop extends PageObjectBase {
 		WebElement boxB = driver.findElement(By.id("column-b"));
 
 		Actions actions = new Actions(driver);
-		for (int i = 0; i <= 5; i++) {
-			int xAxis = 135;
-			int yAxis = 75;
-			actions.dragAndDropBy(boxA, xAxis, yAxis).build().perform();
-			actions.dragAndDropBy(boxB, xAxis, yAxis).build().perform();
-		}
+		int xAxis = (int) (10.0 * Math.random());
+		int yAxis = (int) (10.0 * Math.random());
+
+		actions.dragAndDropBy(boxA, xAxis, yAxis).build().perform();
+		actions.dragAndDropBy(boxB, xAxis, yAxis).build().perform();
+
 		return this;
 	}
 

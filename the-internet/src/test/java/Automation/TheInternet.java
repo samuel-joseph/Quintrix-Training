@@ -134,6 +134,8 @@ public class TheInternet {
 
 	@BeforeTest
 	public void beforeTest() {
+//		String[] browser = {"Chrome","FireFox"};
+//		SetDriver param =new SetDriver();
 		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
 		driver = new ChromeDriver();
 	}
