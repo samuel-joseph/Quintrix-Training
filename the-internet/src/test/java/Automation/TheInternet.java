@@ -163,6 +163,25 @@ public class TheInternet {
 		
 	}
 	
+	//To be continued
+	//stale element reference: element is not attached to the page document 
+	//EntryAd.java:37
+	
+//	@Test
+//	public void tc13EntryAd() {
+//		//Arrange
+//		String expectedSelection = "Entry Ad";
+//		
+//		//Act
+//		String selectedOption = new EntryAd(driver, this.url)
+//				.navigate()
+//				.select()
+//				.getOption();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 
 	@BeforeTest
 	public void beforeTest() {

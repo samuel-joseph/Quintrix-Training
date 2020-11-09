@@ -26,7 +26,7 @@ public class ChallengingDom extends PageObjectBase{
 	}
 	
 	public void loop(String id) {
-		for(int i =0;i<=10;i++) {
+		for(int i =0;i<=3;i++) {
 			driver.findElement(By.xpath(id)).click();
 		}
 	}
