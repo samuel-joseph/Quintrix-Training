@@ -1,13 +1,12 @@
-Test Case ID: 28
+Test Case ID: 29
 Run Result ID: 1
-Infinite Scroll
-
+Redirector
 ----------------
 Summary:
 Test and observe the Status Codes and to learn from it.
 
 Setup:
-https://the-internet.herokuapp.com/status_codes
+https://the-internet.herokuapp.com/redirector
 
 Steps:
 0. Click "here"
