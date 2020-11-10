@@ -8,6 +8,7 @@
           <include name="beforeTest"/>
           <include name="afterTest"/>
           <include name="tc13EntryAd"/>
+          <include name="tc14ExitIntent"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>
