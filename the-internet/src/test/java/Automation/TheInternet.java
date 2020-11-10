@@ -243,15 +243,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc18FormAuthentication() {
+//		//Arrange
+//		String expectedSelection = "Login Page";
+//		
+//		//Act
+//		String selectedOption = new LoginPage(driver, this.url)
+//				.navigate()
+//				.inputSubmitCredentials()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc18FormAuthentication() {
+	public void tc19Frames() {
 		//Arrange
-		String expectedSelection = "Login Page";
+		String expectedSelection = "Frames";
 		
 		//Act
-		String selectedOption = new LoginPage(driver, this.url)
+		String selectedOption = new Frames(driver, this.url)
 				.navigate()
-				.inputSubmitCredentials()
+				.switchToFrames()
 				.getString();
 		
 		//Assert
