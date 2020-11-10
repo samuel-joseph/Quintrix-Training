@@ -244,7 +244,7 @@ public class TheInternet {
 //	}
 	
 	@Test
-	public void tc18LoginPage() {
+	public void tc18FormAuthentication() {
 		//Arrange
 		String expectedSelection = "Login Page";
 		
