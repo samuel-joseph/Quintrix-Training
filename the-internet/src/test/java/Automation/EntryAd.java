@@ -30,7 +30,7 @@ public class EntryAd extends PageObjectBase {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebElement reset = driver.findElement(By.id("restart-ad"));
 		reset.click();
-		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 //		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 //		executor.executeScript("arguments[0].scrollIntoView(true);", element);
