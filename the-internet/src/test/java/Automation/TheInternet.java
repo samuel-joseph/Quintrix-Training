@@ -258,15 +258,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc19Frames() {
+//		//Arrange
+//		String expectedSelection = "Frames";
+//		
+//		//Act
+//		String selectedOption = new Frames(driver, this.url)
+//				.navigate()
+//				.switchToFrames()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc19Frames() {
+	public void tc20HorizontalSlider() {
 		//Arrange
-		String expectedSelection = "Frames";
+		String expectedSelection = "Horizontal Slider";
 		
 		//Act
-		String selectedOption = new Frames(driver, this.url)
+		String selectedOption = new HorizontalSlider(driver, this.url)
 				.navigate()
-				.switchToFrames()
+				.clickMovePointer()
 				.getString();
 		
 		//Assert
