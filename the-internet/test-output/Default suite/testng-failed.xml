@@ -6,7 +6,7 @@
       <class name="Automation.TheInternet">
         <methods>
           <include name="beforeTest"/>
-          <include name="tc18LoginPage"/>
+          <include name="tc19Frames"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
