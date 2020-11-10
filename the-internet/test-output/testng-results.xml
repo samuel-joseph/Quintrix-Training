@@ -1,61 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-08T22:44:25 EST" name="Default suite" finished-at="2020-11-08T22:44:44 EST" duration-ms="19595">
+  <suite started-at="2020-11-09T21:48:24 EST" name="Default suite" finished-at="2020-11-09T21:48:45 EST" duration-ms="20559">
     <groups>
     </groups>
-    <test started-at="2020-11-08T22:44:25 EST" name="Default test" finished-at="2020-11-08T22:44:44 EST" duration-ms="19595">
+    <test started-at="2020-11-09T21:48:24 EST" name="Default test" finished-at="2020-11-09T21:48:45 EST" duration-ms="20559">
       <class name="Automation.TheInternet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:25 EST" name="beforeTest" finished-at="2020-11-08T22:44:26 EST" duration-ms="1127" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:24 EST" name="beforeTest" finished-at="2020-11-09T21:48:26 EST" duration-ms="1225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:26 EST" name="canLaunchChromeDriver" finished-at="2020-11-08T22:44:26 EST" duration-ms="351" status="PASS">
+        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:26 EST" name="canLaunchChromeDriver" finished-at="2020-11-09T21:48:26 EST" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canLaunchChromeDriver -->
-        <test-method signature="tc10CanSelectDropdownListItem()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:26 EST" name="tc10CanSelectDropdownListItem" finished-at="2020-11-08T22:44:27 EST" duration-ms="240" status="PASS">
+        <test-method signature="tc10CanSelectDropdownListItem()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:26 EST" name="tc10CanSelectDropdownListItem" finished-at="2020-11-09T21:48:26 EST" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc10CanSelectDropdownListItem -->
-        <test-method signature="tc11DynamicControls()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:27 EST" name="tc11DynamicControls" finished-at="2020-11-08T22:44:30 EST" duration-ms="3285" status="PASS">
+        <test-method signature="tc11DynamicControls()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:26 EST" name="tc11DynamicControls" finished-at="2020-11-09T21:48:30 EST" duration-ms="3304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc11DynamicControls -->
-        <test-method signature="tc12DynamicLoading()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:30 EST" name="tc12DynamicLoading" finished-at="2020-11-08T22:44:35 EST" duration-ms="5468" status="PASS">
+        <test-method signature="tc12DynamicLoading()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:30 EST" name="tc12DynamicLoading" finished-at="2020-11-09T21:48:35 EST" duration-ms="5518" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc12DynamicLoading -->
-        <test-method signature="tc1canNavigateToIndexPage()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:35 EST" name="tc1canNavigateToIndexPage" finished-at="2020-11-08T22:44:35 EST" duration-ms="101" status="PASS">
+        <test-method signature="tc13EntryAd()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:35 EST" name="tc13EntryAd" finished-at="2020-11-09T21:48:36 EST" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc13EntryAd -->
+        <test-method signature="tc1canNavigateToIndexPage()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:36 EST" name="tc1canNavigateToIndexPage" finished-at="2020-11-09T21:48:36 EST" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1canNavigateToIndexPage -->
-        <test-method signature="tc2AddRemoveElement()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:35 EST" name="tc2AddRemoveElement" finished-at="2020-11-08T22:44:40 EST" duration-ms="4762" status="PASS">
+        <test-method signature="tc2AddRemoveElement()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:36 EST" name="tc2AddRemoveElement" finished-at="2020-11-09T21:48:41 EST" duration-ms="4722" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc2AddRemoveElement -->
-        <test-method signature="tc3BasicAuth()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:40 EST" name="tc3BasicAuth" finished-at="2020-11-08T22:44:41 EST" duration-ms="401" status="PASS">
+        <test-method signature="tc3BasicAuth()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:41 EST" name="tc3BasicAuth" finished-at="2020-11-09T21:48:41 EST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc3BasicAuth -->
-        <test-method signature="tc4ChallengingDom()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:41 EST" name="tc4ChallengingDom" finished-at="2020-11-08T22:44:42 EST" duration-ms="1690" status="PASS">
+        <test-method signature="tc4ChallengingDom()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:41 EST" name="tc4ChallengingDom" finished-at="2020-11-09T21:48:43 EST" duration-ms="1651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc4ChallengingDom -->
-        <test-method signature="tc6ContextMenu()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:42 EST" name="tc6ContextMenu" finished-at="2020-11-08T22:44:43 EST" duration-ms="489" status="PASS">
+        <test-method signature="tc6ContextMenu()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:43 EST" name="tc6ContextMenu" finished-at="2020-11-09T21:48:43 EST" duration-ms="472" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc6ContextMenu -->
-        <test-method signature="tc7DisappearingElements()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:43 EST" name="tc7DisappearingElements" finished-at="2020-11-08T22:44:43 EST" duration-ms="687" status="PASS">
+        <test-method signature="tc7DisappearingElements()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:43 EST" name="tc7DisappearingElements" finished-at="2020-11-09T21:48:44 EST" duration-ms="709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc7DisappearingElements -->
-        <test-method signature="tc9DragAndDrop()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:43 EST" name="tc9DragAndDrop" finished-at="2020-11-08T22:44:44 EST" duration-ms="864" status="PASS">
+        <test-method signature="tc9DragAndDrop()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:44 EST" name="tc9DragAndDrop" finished-at="2020-11-09T21:48:45 EST" duration-ms="901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc9DragAndDrop -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@5906ebcb]" started-at="2020-11-08T22:44:44 EST" name="afterTest" finished-at="2020-11-08T22:44:44 EST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@258e2e41]" started-at="2020-11-09T21:48:45 EST" name="afterTest" finished-at="2020-11-09T21:48:45 EST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

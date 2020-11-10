@@ -19,23 +19,22 @@ public class EntryAd extends PageObjectBase {
 	}
 
 	public EntryAd select() {
+		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		
+
 		WebElement element = driver.findElement(By.xpath("//*[@id=\"modal\"]/div[2]/div[3]/p"));
-		executor.executeScript("arguments[0].scrollIntoView(true);", element);
+
 		element.click();
 		
-		try {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebElement reset = driver.findElement(By.id("restart-ad"));
 		reset.click();
-		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-		    WebElement reset = driver.findElement(By.id("restart-ad"));
-		    reset.click();
-		}
-		executor.executeScript("arguments[0].scrollIntoView(true);", element);
-		element.click();
+		
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+//		executor.executeScript("arguments[0].scrollIntoView(true);", element);
+//		element.click();
 		return this;
 	}
 
