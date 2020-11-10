@@ -20,7 +20,8 @@ public class FileDownload extends PageObjectBase{
 	public String mapClick() {
 		List<WebElement> aTag = driver.findElements(By.cssSelector("#content > div > a"));
 		for(WebElement a:aTag) {
-			a.click();
+//			a.click();
+			System.out.print(a.getText());
 		}
 		return driver.findElement(By.xpath("//*[@id=\"content\"]/div/h3")).getText();
 	}
