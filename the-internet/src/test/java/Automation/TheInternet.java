@@ -212,16 +212,31 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc16FileUploader() {
+//		//Arrange
+//		String expectedSelection = "File Uploader";
+//		
+//		//Act
+//		String selectedOption = new FileUploaderPage(driver, this.url)
+//				.navigate()
+//				.chooseFile()
+//				.dragFile()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc16FileUploader() {
+	public void tc17ForgotPassword() {
 		//Arrange
-		String expectedSelection = "File Uploader";
+		String expectedSelection = "Forgot Password";
 		
 		//Act
-		String selectedOption = new FileUploaderPage(driver, this.url)
+		String selectedOption = new ForgotPassword(driver,this.url)
 				.navigate()
-				.chooseFile()
-				.dragFile()
+				.retrievePassword()
 				.getString();
 		
 		//Assert
