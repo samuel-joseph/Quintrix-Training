@@ -228,15 +228,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc17ForgotPassword() {
+//		//Arrange
+//		String expectedSelection = "Forgot Password";
+//		
+//		//Act
+//		String selectedOption = new ForgotPassword(driver,this.url)
+//				.navigate()
+//				.retrievePassword()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc17ForgotPassword() {
+	public void tc18LoginPage() {
 		//Arrange
-		String expectedSelection = "Forgot Password";
+		String expectedSelection = "Login Page";
 		
 		//Act
-		String selectedOption = new ForgotPassword(driver,this.url)
+		String selectedOption = new LoginPage(driver, this.url)
 				.navigate()
-				.retrievePassword()
+				.inputSubmitCredentials()
 				.getString();
 		
 		//Assert
