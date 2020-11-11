@@ -6,8 +6,8 @@
       <class name="Automation.TheInternet">
         <methods>
           <include name="beforeTest"/>
-          <include name="tc24JQueryUiMenu"/>
           <include name="afterTest"/>
+          <include name="tc25JavascriptAlerts"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>

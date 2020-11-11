@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-11T11:41:28 EST" name="Default suite" finished-at="2020-11-11T11:41:31 EST" duration-ms="2599">
+  <suite started-at="2020-11-11T12:53:38 EST" name="Default suite" finished-at="2020-11-11T12:53:40 EST" duration-ms="2798">
     <groups>
     </groups>
-    <test started-at="2020-11-11T11:41:28 EST" name="Default test" finished-at="2020-11-11T11:41:31 EST" duration-ms="2599">
+    <test started-at="2020-11-11T12:53:38 EST" name="Default test" finished-at="2020-11-11T12:53:40 EST" duration-ms="2798">
       <class name="Automation.TheInternet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T11:41:28 EST" name="beforeTest" finished-at="2020-11-11T11:41:30 EST" duration-ms="1523" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T12:53:38 EST" name="beforeTest" finished-at="2020-11-11T12:53:39 EST" duration-ms="1333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T11:41:30 EST" name="canLaunchChromeDriver" finished-at="2020-11-11T11:41:30 EST" duration-ms="371" status="PASS">
+        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T12:53:39 EST" name="canLaunchChromeDriver" finished-at="2020-11-11T12:53:39 EST" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canLaunchChromeDriver -->
-        <test-method signature="tc24JQueryUiMenu()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T11:41:30 EST" name="tc24JQueryUiMenu" finished-at="2020-11-11T11:41:31 EST" duration-ms="599" status="PASS">
+        <test-method signature="tc25JavascriptAlerts()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T12:53:39 EST" name="tc25JavascriptAlerts" finished-at="2020-11-11T12:53:40 EST" duration-ms="793" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc24JQueryUiMenu -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T11:41:31 EST" name="afterTest" finished-at="2020-11-11T11:41:31 EST" duration-ms="82" status="PASS">
+        </test-method> <!-- tc25JavascriptAlerts -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T12:53:40 EST" name="afterTest" finished-at="2020-11-11T12:53:40 EST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
