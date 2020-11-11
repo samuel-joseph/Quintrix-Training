@@ -287,7 +287,7 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
-	
+//	
 //	@Test
 //	public void tc21Hovers() {
 //		//Arrange
@@ -302,7 +302,7 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
-	
+//	
 //	@Test
 //	public void tc22InfiniteScroll() {
 //		//Arrange
@@ -317,7 +317,7 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
-	
+//	
 //	@Test
 //	public void tc23Input() {
 //		//Arrange
@@ -332,16 +332,31 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
+//	
+//	@Test
+//	public void tc24JQueryUiMenu(){
+//		//Arrange
+//		String expectedSelection = "JQuery UI";
+//		
+//		//Act 
+//		String selectedOption = new JQueryUiMenu(driver, this.url)
+//				.navigate()
+//				.hoverClick()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
 	
 	@Test
-	public void tc24JQueryUiMenu(){
+	public void tc25JavascriptAlerts() {
 		//Arrange
-		String expectedSelection = "JQuery UI";
+		String expectedSelection = "You entered: Hello World";
 		
-		//Act 
-		String selectedOption = new JQueryUiMenu(driver, this.url)
+		//Act
+		String selectedOption = new JavascriptAlerts(driver, this.url)
 				.navigate()
-				.hoverClick()
+				.clickJS()
 				.getString();
 		
 		//Assert
