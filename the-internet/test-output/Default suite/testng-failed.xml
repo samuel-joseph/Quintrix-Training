@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="tc25JavascriptAlerts"/>
+          <include name="tc14ExitIntent"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>
