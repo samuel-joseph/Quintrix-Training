@@ -288,15 +288,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc21Hovers() {
+//		//Arrange
+//		String expectedSelection = "Hovers";
+//		
+//		//Act
+//		String selectedOption = new Hovers(driver, this.url)
+//				.navigate()
+//				.hoverClick()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc21Hovers() {
+	public void tc22InfiniteScroll() {
 		//Arrange
-		String expectedSelection = "Hovers";
+		String expectedSelection = "Infinite Scroll";
 		
 		//Act
-		String selectedOption = new Hovers(driver, this.url)
+		String selectedOption = new InfiniteScroll(driver, this.url)
 				.navigate()
-				.hoverClick()
+				.scroll()
 				.getString();
 		
 		//Assert
