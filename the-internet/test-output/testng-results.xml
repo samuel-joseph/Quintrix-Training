@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-11T00:59:16 EST" name="Default suite" finished-at="2020-11-11T00:59:18 EST" duration-ms="2747">
+  <suite started-at="2020-11-11T01:21:04 EST" name="Default suite" finished-at="2020-11-11T01:21:08 EST" duration-ms="4059">
     <groups>
     </groups>
-    <test started-at="2020-11-11T00:59:16 EST" name="Default test" finished-at="2020-11-11T00:59:18 EST" duration-ms="2747">
+    <test started-at="2020-11-11T01:21:04 EST" name="Default test" finished-at="2020-11-11T01:21:08 EST" duration-ms="4059">
       <class name="Automation.TheInternet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T00:59:16 EST" name="beforeTest" finished-at="2020-11-11T00:59:17 EST" duration-ms="1291" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T01:21:04 EST" name="beforeTest" finished-at="2020-11-11T01:21:05 EST" duration-ms="1268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T00:59:17 EST" name="canLaunchChromeDriver" finished-at="2020-11-11T00:59:17 EST" duration-ms="367" status="PASS">
+        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T01:21:05 EST" name="canLaunchChromeDriver" finished-at="2020-11-11T01:21:05 EST" duration-ms="391" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canLaunchChromeDriver -->
-        <test-method signature="tc21Hovers()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T00:59:17 EST" name="tc21Hovers" finished-at="2020-11-11T00:59:18 EST" duration-ms="981" status="PASS">
+        <test-method signature="tc22InfiniteScroll()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T01:21:05 EST" name="tc22InfiniteScroll" finished-at="2020-11-11T01:21:08 EST" duration-ms="2290" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc21Hovers -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T00:59:18 EST" name="afterTest" finished-at="2020-11-11T00:59:18 EST" duration-ms="84" status="PASS">
+        </test-method> <!-- tc22InfiniteScroll -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@4034c28c]" started-at="2020-11-11T01:21:08 EST" name="afterTest" finished-at="2020-11-11T01:21:08 EST" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
