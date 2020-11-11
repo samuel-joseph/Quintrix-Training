@@ -318,15 +318,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc23Input() {
+//		//Arrange
+//		String expectedSelection = "Inputs";
+//		
+//		//Act
+//		String selectedOption = new Input(driver, this.url)
+//				.navigate()
+//				.inputNumber()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc23Input() {
+	public void tc24JQueryUiMenu(){
 		//Arrange
-		String expectedSelection = "Inputs";
+		String expectedSelection = "JQuery UI";
 		
-		//Act
-		String selectedOption = new Input(driver, this.url)
+		//Act 
+		String selectedOption = new JQueryUiMenu(driver, this.url)
 				.navigate()
-				.inputNumber()
+				.hoverClick()
 				.getString();
 		
 		//Assert
