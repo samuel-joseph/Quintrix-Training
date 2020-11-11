@@ -303,15 +303,30 @@ public class TheInternet {
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
 	
+//	@Test
+//	public void tc22InfiniteScroll() {
+//		//Arrange
+//		String expectedSelection = "Infinite Scroll";
+//		
+//		//Act
+//		String selectedOption = new InfiniteScroll(driver, this.url)
+//				.navigate()
+//				.scroll()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+	
 	@Test
-	public void tc22InfiniteScroll() {
+	public void tc23Input() {
 		//Arrange
-		String expectedSelection = "Infinite Scroll";
+		String expectedSelection = "Inputs";
 		
 		//Act
-		String selectedOption = new InfiniteScroll(driver, this.url)
+		String selectedOption = new Input(driver, this.url)
 				.navigate()
-				.scroll()
+				.inputNumber()
 				.getString();
 		
 		//Assert
