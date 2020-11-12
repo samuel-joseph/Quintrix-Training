@@ -362,21 +362,38 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
+//	
+//	@Test
+//	public void tc26JavascriptErrorPage() {
+//		//Arrange
+//		String expectedSelection = "http://the-internet.herokuapp.com/javascript_error";
+//		
+//		//Act
+//		String selectedOption = new JavascriptErrorPage(driver, this.url)
+//				.navigate()
+//				.getAttribute()
+//				.getPageSource();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+//	
+//	@Test
+//	public void tc27KeyPresses() {
+//		//Arrange
+//		String selectedOption = "Key Presses";
+//		
+//		//Act
+//		String expectedSelection = new KeyPressesPage(driver, this.url)
+//				.navigate()
+//				.inputTarget()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
 	
-	@Test
-	public void tc27KeyPresses() {
-		//Arrange
-		String selectedOption = "Key Presses";
-		
-		//Act
-		String expectedSelection = new KeyPressesPage(driver, this.url)
-				.navigate()
-				.inputTarget()
-				.getString();
-		
-		//Assert
-		Assert.assertEquals(selectedOption, expectedSelection);
-	}
+	
 	
 
 	@BeforeTest
