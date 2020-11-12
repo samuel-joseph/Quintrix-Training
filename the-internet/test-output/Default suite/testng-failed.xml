@@ -5,9 +5,12 @@
     <classes>
       <class name="Automation.TheInternet">
         <methods>
+          <include name="tc4ChallengingDom"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="tc13EntryAd"/>
           <include name="tc14ExitIntent"/>
+          <include name="tc9DragAndDrop"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>
