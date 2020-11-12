@@ -2,6 +2,9 @@ package Automation;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
+
+import java.awt.AWTException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -101,8 +104,24 @@ public class TheInternet {
 		Assert.assertEquals(selectedOption, expectedSelection);
 	}
 	
+	
 	@Test
-	public void tc9CanSelectDropdownListItem() {
+	public void tc9DragAndDrop() {
+		//Arrange
+		String expectedSelection = "Drag and Drop";
+		
+		//Act
+		String selectedOption = new DragAndDrop(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc10CanSelectDropdownListItem() {
 		// Arrange
 		String expectedSelection = "Option 2";
 
@@ -117,12 +136,27 @@ public class TheInternet {
 	}
 	
 	@Test
-	public void tc10DragAndDrop() {
+	public void tc11DynamicControls() {
 		//Arrange
-		String expectedSelection = "Drag and Drop";
+		String expectedSelection = "It's gone!";
 		
 		//Act
-		String selectedOption = new DragAndDrop(driver, this.url)
+		String selectedOption = new DynamicControls(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc12DynamicLoading() {
+		//Arrange
+		String expectedSelection = "Hello World!";
+		
+		//Act
+		String selectedOption = new DynamicLoading(driver, this.url)
 				.navigate()
 				.select()
 				.getOption();
@@ -132,8 +166,208 @@ public class TheInternet {
 	}
 	
 
+	
+	@Test
+	public void tc13EntryAd() {
+		//Arrange
+		String expectedSelection = "Entry Ad";
+		
+		//Act
+		String selectedOption = new EntryAd(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	
+	@Test
+	public void tc14ExitIntent() throws InterruptedException, AWTException {
+		//Arrange
+		String expectedSelection = "This is a modal window";
+		
+		//Act
+		String selectedOption = new ExitAd(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc15FileDownload() {
+		//Arrange
+		String expectedSelection = "File Downloader";
+		
+		//Act
+		String selectedOption = new FileDownload(driver,this.url)
+					.navigate()
+					.mapClick();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc16FileUploader() {
+		//Arrange
+		String expectedSelection = "File Uploader";
+		
+		//Act
+		String selectedOption = new FileUploaderPage(driver, this.url)
+				.navigate()
+				.chooseFile()
+				.dragFile()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc17ForgotPassword() {
+		//Arrange
+		String expectedSelection = "Forgot Password";
+		
+		//Act
+		String selectedOption = new ForgotPassword(driver,this.url)
+				.navigate()
+				.retrievePassword()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc18FormAuthentication() {
+		//Arrange
+		String expectedSelection = "Login Page";
+		
+		//Act
+		String selectedOption = new LoginPage(driver, this.url)
+				.navigate()
+				.inputSubmitCredentials()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc19Frames() {
+		//Arrange
+		String expectedSelection = "Frames";
+		
+		//Act
+		String selectedOption = new Frames(driver, this.url)
+				.navigate()
+				.switchToFrames()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc20HorizontalSlider() {
+		//Arrange
+		String expectedSelection = "Horizontal Slider";
+		
+		//Act
+		String selectedOption = new HorizontalSlider(driver, this.url)
+				.navigate()
+				.clickMovePointer()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc21Hovers() {
+		//Arrange
+		String expectedSelection = "Hovers";
+		
+		//Act
+		String selectedOption = new Hovers(driver, this.url)
+				.navigate()
+				.hoverClick()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc22InfiniteScroll() {
+		//Arrange
+		String expectedSelection = "Infinite Scroll";
+		
+		//Act
+		String selectedOption = new InfiniteScroll(driver, this.url)
+				.navigate()
+				.scroll()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc23Input() {
+		//Arrange
+		String expectedSelection = "Inputs";
+		
+		//Act
+		String selectedOption = new Input(driver, this.url)
+				.navigate()
+				.inputNumber()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc24JQueryUiMenu(){
+		//Arrange
+		String expectedSelection = "JQuery UI";
+		
+		//Act 
+		String selectedOption = new JQueryUiMenu(driver, this.url)
+				.navigate()
+				.hoverClick()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc25JavascriptAlerts() {
+		//Arrange
+		String expectedSelection = "You entered: Hello World";
+		
+		//Act
+		String selectedOption = new JavascriptAlerts(driver, this.url)
+				.navigate()
+				.clickJS()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+
 	@BeforeTest
 	public void beforeTest() {
+//		String[] browser = {"Chrome","FireFox"};
+//		SetDriver param =new SetDriver();
 		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
 		driver = new ChromeDriver();
 	}
