@@ -7,6 +7,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class HorizontalSlider extends PageObjectBase{
 	
 	public HorizontalSlider(WebDriver driver, String url) {

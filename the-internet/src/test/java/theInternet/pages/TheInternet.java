@@ -1,12 +1,14 @@
 package theInternet.pages;
 
 import org.testng.annotations.Test;
+
+import theInternet.foundation.BrowserFactory;
+
 import org.testng.annotations.BeforeTest;
 
 import java.awt.AWTException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 
@@ -38,73 +40,73 @@ public class TheInternet {
 		Assert.assertEquals(actualPageTitle, expectedPageTitle);
 	}
 
-//	@Test
-//	public void tc2AddRemoveElement() {
-//		// Arrange
-//		String expectedSelection = "Delete";
-//
-//		// Act
-//		String selectedOption = new AddRemoveElement(driver, this.url).navigate().select().getOption(expectedSelection);
-//		// Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
-//
-//	@Test
-//	public void tc3BasicAuth() {
-//		// Arrange
-//		String expectedSelection = "Congratulations! You must have the proper credentials.";
-//
-//		// Act
-//		String selectedOption = new BasicAuth(driver, this.url).navigate().select().getOption();
-//
-//		// Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
-//
-//	@Test
-//	public void tc4ChallengingDom() {
-//		// Arrange
-//		String expectedSelection = "Challenging DOM";
-//
-//		// Act
-//		String selectedOption = new ChallengingDom(driver, this.url).navigate().select().getOption();
-//
-//		// Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//
-//	}
-//	
-//	@Test
-//	public void tc6ContextMenu() {
-//		//Arrange
-//		String expectedSelection = "Context Menu";
-//		
-//		//Act
-//		String selectedOption = new ContextMenu(driver, this.url)
-//				.navigate()
-//				.select()
-//				.getOption();
-//		
-//		//Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
-//	
-//	@Test
-//	public void tc7DisappearingElements() {
-//		//Arrange
-//		String expectedSelection = "Disappearing Elements";
-//		
-//		//Act
-//		String selectedOption = new DisappearingElements(driver, this.url)
-//				.navigate()
-//				.select()
-//				.getOption();
-//		
-//		//Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
-//	
-//	
+	@Test
+	public void tc2AddRemoveElement() {
+		// Arrange
+		String expectedSelection = "Delete";
+
+		// Act
+		String selectedOption = new AddRemoveElement(driver, this.url).navigate().select().getOption(expectedSelection);
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+
+	@Test
+	public void tc3BasicAuth() {
+		// Arrange
+		String expectedSelection = "Congratulations! You must have the proper credentials.";
+
+		// Act
+		String selectedOption = new BasicAuth(driver, this.url).navigate().select().getOption();
+
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+
+	@Test
+	public void tc4ChallengingDom() {
+		// Arrange
+		String expectedSelection = "Challenging DOM";
+
+		// Act
+		String selectedOption = new ChallengingDom(driver, this.url).navigate().select().getOption();
+
+		// Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+
+	}
+	
+	@Test
+	public void tc6ContextMenu() {
+		//Arrange
+		String expectedSelection = "Context Menu";
+		
+		//Act
+		String selectedOption = new ContextMenu(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc7DisappearingElements() {
+		//Arrange
+		String expectedSelection = "Disappearing Elements";
+		
+		//Act
+		String selectedOption = new DisappearingElements(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	
 	@Test
 	public void tc9DragAndDrop() {
 		//Arrange
@@ -428,10 +430,10 @@ public class TheInternet {
 
 	@BeforeTest
 	public void beforeTest() {
-//		String[] browser = {"Chrome","FireFox"};
-//		SetDriver param =new SetDriver();
-		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
-		driver = new ChromeDriver();
+//		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
+//		driver = new ChromeDriver();
+		
+		driver = BrowserFactory.getBrowser("Chrome");
 	}
 
 	@AfterTest

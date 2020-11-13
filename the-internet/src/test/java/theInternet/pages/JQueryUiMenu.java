@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import theInternet.framework.PageObjectBase;
+
 public class JQueryUiMenu extends PageObjectBase {
 
 	public JQueryUiMenu(WebDriver driver, String url) {

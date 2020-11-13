@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import theInternet.framework.PageObjectBase;
+
 public class DynamicLoading extends PageObjectBase{
 	
 	public DynamicLoading(WebDriver driver, String url) {

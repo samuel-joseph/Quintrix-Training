@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import theInternet.framework.PageObjectBase;
+
 public class DragAndDrop extends PageObjectBase {
 
 	public DragAndDrop(WebDriver driver, String url) {

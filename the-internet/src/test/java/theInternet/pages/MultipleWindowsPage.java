@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class MultipleWindowsPage extends PageObjectBase {
 
 	public MultipleWindowsPage(WebDriver driver, String url) {

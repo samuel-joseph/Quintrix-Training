@@ -5,6 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class KeyPressesPage extends PageObjectBase{
 	
 	public KeyPressesPage(WebDriver driver, String url) {

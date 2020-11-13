@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import theInternet.framework.PageObjectBase;
+
 public class ContextMenu extends PageObjectBase{
 	
 	public ContextMenu(WebDriver driver, String url) {

@@ -2,6 +2,8 @@ package theInternet.pages;
 
 import org.openqa.selenium.WebDriver;
 
+import theInternet.framework.PageObjectBase;
+
 public class IndexPage extends PageObjectBase{
 	
 	public IndexPage(WebDriver driver, String url) {

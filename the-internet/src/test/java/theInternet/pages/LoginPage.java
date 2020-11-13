@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class LoginPage extends PageObjectBase{
 	
 	public LoginPage(WebDriver driver, String url) {
