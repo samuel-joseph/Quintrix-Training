@@ -17,7 +17,7 @@ public class DragAndDrop extends PageObjectBase {
 	}
 
 	public DragAndDrop navigate() {
-		super.navigate("drag_and_drop");
+		super.navigate("/drag_and_drop");
 		return this;
 	}
 

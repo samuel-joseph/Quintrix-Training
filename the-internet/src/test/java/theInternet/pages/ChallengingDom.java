@@ -12,7 +12,7 @@ public class ChallengingDom extends PageObjectBase{
 	}
 	
 	public ChallengingDom navigate() {
-		super.navigate("challenging_dom");
+		super.navigate("/challenging_dom");
 		return this;
 	}
 	

@@ -14,7 +14,7 @@ public class Input extends PageObjectBase {
 	}
 
 	public Input navigate() {
-		super.navigate("inputs");
+		super.navigate("/inputs");
 		return this;
 	}
 

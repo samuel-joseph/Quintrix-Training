@@ -13,7 +13,7 @@ public class JavascriptErrorPage extends PageObjectBase{
 	}
 	
 	public JavascriptErrorPage navigate() {
-		super.navigate("javascript_error");
+		super.navigate("/javascript_error");
 		return this;
 	}
 	

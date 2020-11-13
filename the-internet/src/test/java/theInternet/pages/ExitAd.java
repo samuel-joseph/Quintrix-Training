@@ -18,7 +18,7 @@ public class ExitAd extends PageObjectBase {
 	}
 	
 	public ExitAd navigate() {
-		super.navigate("exit_intent");
+		super.navigate("/exit_intent");
 		return this;
 	}
 	

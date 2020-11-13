@@ -15,7 +15,7 @@ public class Frames extends PageObjectBase{
 	}
 	
 	public Frames navigate() {
-		super.navigate("frames");
+		super.navigate("/frames");
 		return this;
 	}
 	
@@ -34,10 +34,6 @@ public class Frames extends PageObjectBase{
 		driver.switchTo().frame(0);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement typeTo = driver.findElement(By.xpath("//*[@id=\"tinymce\"]/p"));
-//		WebElement bold = driver.findElement(By.xpath("//*[@id=\"mceu_3\"]/button"));
-		
-//		bold.click();
-//		bold.click();
 		typeTo.sendKeys("Hello World!");
 		driver.navigate().back();
 		return this;

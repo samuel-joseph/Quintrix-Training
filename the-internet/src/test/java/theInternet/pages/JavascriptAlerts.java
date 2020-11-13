@@ -17,7 +17,7 @@ public class JavascriptAlerts extends PageObjectBase{
 	}
 	
 	public JavascriptAlerts navigate() {
-		super.navigate("javascript_alerts");
+		super.navigate("/javascript_alerts");
 		return this;
 	}
 	
@@ -28,20 +28,12 @@ public class JavascriptAlerts extends PageObjectBase{
 			WebElement li = driver.findElement(By.xpath(xpath));
 			li.click();
 			
-//			String onclick = li.getAttribute("onclick");
-//			if(onclick == "jsAlert()"||onclick == "jsConfirm()") {
 				Alert alert = driver.switchTo().alert();
 				if(i==3) {
 					alert.sendKeys("Hello World");
 					driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				}
 				alert.accept();
-//			}
-//			if(onclick == "jsPrompt()") {
-//				Alert alert = driver.switchTo().alert();
-//				alert.sendKeys("Hello World");
-//				alert.accept();
-//			}
 		}
 		
 		return this;

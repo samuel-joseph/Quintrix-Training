@@ -43,7 +43,7 @@ public class TheInternet {
 	@Test
 	public void tc2AddRemoveElement() {
 		// Arrange
-		String expectedSelection = "Delete";
+		String expectedSelection = "Add/Remove Elements";
 
 		// Act
 		String selectedOption = new AddRemoveElement(driver, this.url).navigate().select().getOption(expectedSelection);
@@ -398,7 +398,7 @@ public class TheInternet {
 	@Test
 	public void tc28MultipleWindows() {
 		//Arrange
-		String selectedOption = "http://the-internet.herokuapp.com/windows";
+		String selectedOption = "http://the-internet.herokuapp.com//windows";
 		
 		//Act
 		String expectedSelection = new MultipleWindowsPage(driver, this.url)
@@ -413,7 +413,7 @@ public class TheInternet {
 	@Test
 	public void tc29NestedFrames() {
 		//Arrange
-		String selectedOption = "http://the-internet.herokuapp.com/nested_frames";
+		String selectedOption = "http://the-internet.herokuapp.com//nested_frames";
 		
 		//Act
 		String expectedSelection = new NestedFramesPage(driver, this.url)
@@ -430,9 +430,6 @@ public class TheInternet {
 
 	@BeforeTest
 	public void beforeTest() {
-//		System.setProperty("webdriver.chrome.driver", "/Users/joe/git/chromedriver");
-//		driver = new ChromeDriver();
-		
 		driver = BrowserFactory.getBrowser("Chrome");
 	}
 

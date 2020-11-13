@@ -13,7 +13,7 @@ public class MultipleWindowsPage extends PageObjectBase {
 	}
 
 	public MultipleWindowsPage navigate() {
-		super.navigate("windows");
+		super.navigate("/windows");
 		return this;
 	}
 

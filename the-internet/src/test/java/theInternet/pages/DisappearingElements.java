@@ -12,7 +12,7 @@ public class DisappearingElements extends PageObjectBase{
 	}
 	
 	public DisappearingElements navigate() {
-		super.navigate("disappearing_elements");
+		super.navigate("/disappearing_elements");
 		return this;
 	}
 	

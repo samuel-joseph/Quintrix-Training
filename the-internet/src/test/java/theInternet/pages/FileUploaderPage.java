@@ -19,7 +19,7 @@ public class FileUploaderPage extends PageObjectBase{
 	}
 	
 	public FileUploaderPage navigate() {
-		super.navigate("upload");
+		super.navigate("/upload");
 		return this;
 	}
 	

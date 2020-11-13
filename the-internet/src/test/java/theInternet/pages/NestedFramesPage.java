@@ -15,7 +15,7 @@ public class NestedFramesPage extends PageObjectBase{
 	}
 	
 	public NestedFramesPage navigate() {
-		super.navigate("nested_frames");
+		super.navigate("/nested_frames");
 		return this;
 	}
 	

@@ -13,7 +13,7 @@ public class ForgotPassword extends PageObjectBase{
 	}
 	
 	public ForgotPassword navigate() {
-		super.navigate("forgot_password");
+		super.navigate("/forgot_password");
 		return this;
 	}
 	

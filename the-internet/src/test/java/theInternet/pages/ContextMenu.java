@@ -14,7 +14,7 @@ public class ContextMenu extends PageObjectBase{
 	}
 	
 	public ContextMenu navigate() {
-		super.navigate("context_menu");
+		super.navigate("/context_menu");
 		return this;
 	}
 	

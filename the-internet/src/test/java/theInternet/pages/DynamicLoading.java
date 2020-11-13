@@ -15,7 +15,7 @@ public class DynamicLoading extends PageObjectBase{
 	
 	
 	public DynamicLoading navigate() {
-		super.navigate("dynamic_loading");
+		super.navigate("/dynamic_loading");
 		return this;
 	}
 	

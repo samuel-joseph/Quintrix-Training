@@ -16,7 +16,7 @@ public class EntryAd extends PageObjectBase {
 	}
 
 	public EntryAd navigate() {
-		super.navigate("entry_ad");
+		super.navigate("/entry_ad");
 		return this;
 	}
 

@@ -16,7 +16,7 @@ public class HorizontalSlider extends PageObjectBase{
 	}
 	
 	public HorizontalSlider navigate() {
-		super.navigate("horizontal_slider");
+		super.navigate("/horizontal_slider");
 		return this;
 	}
 	

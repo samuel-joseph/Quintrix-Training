@@ -1,6 +1,5 @@
 package theInternet.pages;
 
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +14,7 @@ public class LoginPage extends PageObjectBase{
 	}
 	
 	public LoginPage navigate() {
-		super.navigate("login");
+		super.navigate("/login");
 		return this;
 	}
 	

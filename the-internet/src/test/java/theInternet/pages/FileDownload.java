@@ -15,7 +15,7 @@ public class FileDownload extends PageObjectBase{
 	}
 	
 	public FileDownload navigate() {
-		super.navigate("download");
+		super.navigate("/download");
 		return this;
 	}
 	

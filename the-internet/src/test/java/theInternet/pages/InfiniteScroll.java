@@ -13,7 +13,7 @@ public class InfiniteScroll extends PageObjectBase {
 	}
 
 	public InfiniteScroll navigate() {
-		super.navigate("infinite_scroll");
+		super.navigate("/infinite_scroll");
 		return this;
 	}
 

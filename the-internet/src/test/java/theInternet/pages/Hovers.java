@@ -14,7 +14,7 @@ public class Hovers extends PageObjectBase {
 	}
 
 	public Hovers navigate() {
-		super.navigate("hovers");
+		super.navigate("/hovers");
 		return this;
 	}
 
