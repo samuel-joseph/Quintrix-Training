@@ -6,8 +6,8 @@
       <class name="Automation.TheInternet">
         <methods>
           <include name="beforeTest"/>
+          <include name="tc28MultipleWindows"/>
           <include name="afterTest"/>
-          <include name="tc26JavascriptErrorPage"/>
         </methods>
       </class> <!-- Automation.TheInternet -->
     </classes>
