@@ -105,20 +105,20 @@ public class TheInternet {
 //	}
 //	
 //	
-//	@Test
-//	public void tc9DragAndDrop() {
-//		//Arrange
-//		String expectedSelection = "Drag and Drop";
-//		
-//		//Act
-//		String selectedOption = new DragAndDrop(driver, this.url)
-//				.navigate()
-//				.select()
-//				.getOption();
-//		
-//		//Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
+	@Test
+	public void tc9DragAndDrop() {
+		//Arrange
+		String expectedSelection = "Drag and Drop";
+		
+		//Act
+		String selectedOption = new DragAndDrop(driver, this.url)
+				.navigate()
+				.select()
+				.getOption();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
 //	
 //	@Test
 //	public void tc10CanSelectDropdownListItem() {
@@ -402,6 +402,21 @@ public class TheInternet {
 //		String expectedSelection = new MultipleWindowsPage(driver, this.url)
 //				.navigate()
 //				.clickHere()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
+//	
+//	@Test
+//	public void tc29NestedFrames() {
+//		//Arrange
+//		String selectedOption = "http://the-internet.herokuapp.com/nested_frames";
+//		
+//		//Act
+//		String expectedSelection = new NestedFramesPage(driver, this.url)
+//				.navigate()
+//				.inputText()
 //				.getString();
 //		
 //		//Assert

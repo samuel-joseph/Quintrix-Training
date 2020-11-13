@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-12T19:03:22 EST" name="Default suite" finished-at="2020-11-12T19:03:24 EST" duration-ms="2019">
+  <suite started-at="2020-11-12T20:41:06 EST" name="Default suite" finished-at="2020-11-12T20:41:09 EST" duration-ms="2683">
     <groups>
     </groups>
-    <test started-at="2020-11-12T19:03:22 EST" name="Default test" finished-at="2020-11-12T19:03:24 EST" duration-ms="2019">
+    <test started-at="2020-11-12T20:41:06 EST" name="Default test" finished-at="2020-11-12T20:41:09 EST" duration-ms="2683">
       <class name="Automation.TheInternet">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T19:03:22 EST" name="beforeTest" finished-at="2020-11-12T19:03:24 EST" duration-ms="1269" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T20:41:06 EST" name="beforeTest" finished-at="2020-11-12T20:41:08 EST" duration-ms="1694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T19:03:24 EST" name="canLaunchChromeDriver" finished-at="2020-11-12T19:03:24 EST" duration-ms="335" status="PASS">
+        <test-method signature="canLaunchChromeDriver()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T20:41:08 EST" name="canLaunchChromeDriver" finished-at="2020-11-12T20:41:08 EST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- canLaunchChromeDriver -->
-        <test-method signature="tc1canNavigateToIndexPage()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T19:03:24 EST" name="tc1canNavigateToIndexPage" finished-at="2020-11-12T19:03:24 EST" duration-ms="110" status="PASS">
+        <test-method signature="tc1canNavigateToIndexPage()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T20:41:08 EST" name="tc1canNavigateToIndexPage" finished-at="2020-11-12T20:41:08 EST" duration-ms="102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc1canNavigateToIndexPage -->
-        <test-method signature="tc28MultipleWindows()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T19:03:24 EST" name="tc28MultipleWindows" finished-at="2020-11-12T19:03:24 EST" duration-ms="203" status="PASS">
+        <test-method signature="tc9DragAndDrop()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T20:41:08 EST" name="tc9DragAndDrop" finished-at="2020-11-12T20:41:09 EST" duration-ms="428" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc28MultipleWindows -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T19:03:24 EST" name="afterTest" finished-at="2020-11-12T19:03:24 EST" duration-ms="79" status="PASS">
+        </test-method> <!-- tc9DragAndDrop -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:Automation.TheInternet@e50a6f6]" started-at="2020-11-12T20:41:09 EST" name="afterTest" finished-at="2020-11-12T20:41:09 EST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

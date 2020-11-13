@@ -1,6 +1,7 @@
 package Automation;
 
 import java.awt.Desktop.Action;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,15 +20,21 @@ public class DragAndDrop extends PageObjectBase {
 	}
 
 	public DragAndDrop select() {
-		WebElement boxA = driver.findElement(By.id("column-a"));
-		WebElement boxB = driver.findElement(By.id("column-b"));
+		WebElement boxA = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[1]"));
+		WebElement boxB = driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div[2]"));
 
 		Actions actions = new Actions(driver);
 		int xAxis = (int) (10.0 * Math.random());
 		int yAxis = (int) (10.0 * Math.random());
 
-		actions.dragAndDropBy(boxA, xAxis, yAxis).build().perform();
-		actions.dragAndDropBy(boxB, xAxis, yAxis).build().perform();
+
+//		actions.dragAndDropBy(boxB, xAxis, yAxis).build().perform();
+//		actions.dragAndDropBy(boxA, xAxis, yAxis).build().perform();
+		
+//		actions.dragAndDrop(boxA, boxB).perform();
+//		actions.dragAndDrop(boxB, boxA).perform();
+		
+		actions.clickAndHold().moveToElement(boxA).release(boxB).build().perform();
 
 		return this;
 	}
