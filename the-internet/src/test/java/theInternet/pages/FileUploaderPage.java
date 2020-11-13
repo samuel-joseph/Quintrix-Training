@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import theInternet.framework.PageObjectBase;
+
 public class FileUploaderPage extends PageObjectBase{
 	
 	public FileUploaderPage(WebDriver driver, String url) {
@@ -17,7 +19,7 @@ public class FileUploaderPage extends PageObjectBase{
 	}
 	
 	public FileUploaderPage navigate() {
-		super.navigate("upload");
+		super.navigate("/upload");
 		return this;
 	}
 	

@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import theInternet.framework.PageObjectBase;
+
 public class JQueryUiMenu extends PageObjectBase {
 
 	public JQueryUiMenu(WebDriver driver, String url) {
@@ -17,7 +19,7 @@ public class JQueryUiMenu extends PageObjectBase {
 	}
 
 	public JQueryUiMenu navigate() {
-		super.navigate("jqueryui/menu");
+		super.navigate("/jqueryui/menu");
 		return this;
 	}
 
@@ -26,19 +28,6 @@ public class JQueryUiMenu extends PageObjectBase {
 		WebElement downloads = driver.findElement(By.xpath("//*[@id=\"ui-id-4\"]"));
 		WebElement enable = driver.findElement(By.xpath("//*[@id=\"ui-id-2\"]"));
 		WebElement backToJquery = driver.findElement(By.xpath("//*[@id=\"ui-id-5\"]"));
-//		List<WebElement> enabled = driver.findElements(By.xpath("//*[@id=\"menu\"]/li[2]/ul/li[1]/ul"));
-//
-//		for (WebElement li : enabled) {
-//			enable.click();
-//			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//			downloads.click();
-//			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//			if (li.isEnabled()) {
-//				li.click();
-//			}
-//			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		}
-//
 
 
 		Actions actions = new Actions(driver);

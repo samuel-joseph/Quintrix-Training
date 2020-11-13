@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class NestedFramesPage extends PageObjectBase{
 	
 	public NestedFramesPage(WebDriver driver, String url) {
@@ -13,7 +15,7 @@ public class NestedFramesPage extends PageObjectBase{
 	}
 	
 	public NestedFramesPage navigate() {
-		super.navigate("nested_frames");
+		super.navigate("/nested_frames");
 		return this;
 	}
 	

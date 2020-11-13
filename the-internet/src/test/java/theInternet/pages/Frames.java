@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class Frames extends PageObjectBase{
 	
 	public Frames(WebDriver driver, String url) {
@@ -13,7 +15,7 @@ public class Frames extends PageObjectBase{
 	}
 	
 	public Frames navigate() {
-		super.navigate("frames");
+		super.navigate("/frames");
 		return this;
 	}
 	
@@ -32,10 +34,6 @@ public class Frames extends PageObjectBase{
 		driver.switchTo().frame(0);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement typeTo = driver.findElement(By.xpath("//*[@id=\"tinymce\"]/p"));
-//		WebElement bold = driver.findElement(By.xpath("//*[@id=\"mceu_3\"]/button"));
-		
-//		bold.click();
-//		bold.click();
 		typeTo.sendKeys("Hello World!");
 		driver.navigate().back();
 		return this;

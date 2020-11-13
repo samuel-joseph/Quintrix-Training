@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class JavascriptErrorPage extends PageObjectBase{
 	
 	public JavascriptErrorPage(WebDriver driver, String url) {
@@ -11,7 +13,7 @@ public class JavascriptErrorPage extends PageObjectBase{
 	}
 	
 	public JavascriptErrorPage navigate() {
-		super.navigate("javascript_error");
+		super.navigate("/javascript_error");
 		return this;
 	}
 	

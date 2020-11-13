@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import theInternet.framework.PageObjectBase;
+
 public class DynamicControls extends PageObjectBase{
 	
 	public DynamicControls(WebDriver driver, String url) {
@@ -15,7 +17,7 @@ public class DynamicControls extends PageObjectBase{
 	
 	
 	public DynamicControls navigate() {
-		super.navigate("dynamic_controls");
+		super.navigate("/dynamic_controls");
 		return this;
 	}
 	
@@ -27,8 +29,8 @@ public class DynamicControls extends PageObjectBase{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		driver.findElement(By.xpath("//*[@id=\"input-example\"]/button")).click();
-		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		driver.findElement(By.xpath("//*[@id=\"input-example\"]/button")).click();
 		return this;

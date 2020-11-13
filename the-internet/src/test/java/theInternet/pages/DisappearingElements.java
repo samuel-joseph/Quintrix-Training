@@ -3,6 +3,8 @@ package theInternet.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import theInternet.framework.PageObjectBase;
+
 public class DisappearingElements extends PageObjectBase{
 	
 	public DisappearingElements(WebDriver driver, String url) {
@@ -10,7 +12,7 @@ public class DisappearingElements extends PageObjectBase{
 	}
 	
 	public DisappearingElements navigate() {
-		super.navigate("disappearing_elements");
+		super.navigate("/disappearing_elements");
 		return this;
 	}
 	

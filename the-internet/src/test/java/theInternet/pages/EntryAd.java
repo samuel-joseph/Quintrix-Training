@@ -7,6 +7,8 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class EntryAd extends PageObjectBase {
 
 	public EntryAd(WebDriver driver, String url) {
@@ -14,7 +16,7 @@ public class EntryAd extends PageObjectBase {
 	}
 
 	public EntryAd navigate() {
-		super.navigate("entry_ad");
+		super.navigate("/entry_ad");
 		return this;
 	}
 

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
+import theInternet.framework.PageObjectBase;
+
 public class Hovers extends PageObjectBase {
 
 	public Hovers(WebDriver driver, String url) {
@@ -12,7 +14,7 @@ public class Hovers extends PageObjectBase {
 	}
 
 	public Hovers navigate() {
-		super.navigate("hovers");
+		super.navigate("/hovers");
 		return this;
 	}
 

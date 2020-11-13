@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
+import theInternet.framework.PageObjectBase;
+
 public class InfiniteScroll extends PageObjectBase {
 
 	public InfiniteScroll(WebDriver driver, String url) {
@@ -11,7 +13,7 @@ public class InfiniteScroll extends PageObjectBase {
 	}
 
 	public InfiniteScroll navigate() {
-		super.navigate("infinite_scroll");
+		super.navigate("/infinite_scroll");
 		return this;
 	}
 

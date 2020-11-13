@@ -5,6 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class Input extends PageObjectBase {
 
 	public Input(WebDriver driver, String url) {
@@ -12,7 +14,7 @@ public class Input extends PageObjectBase {
 	}
 
 	public Input navigate() {
-		super.navigate("inputs");
+		super.navigate("/inputs");
 		return this;
 	}
 

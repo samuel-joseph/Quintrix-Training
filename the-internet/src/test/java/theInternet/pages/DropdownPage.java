@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import theInternet.framework.PageObjectBase;
+
 public class DropdownPage extends PageObjectBase{
 
 	public DropdownPage(WebDriver driver, String url) {

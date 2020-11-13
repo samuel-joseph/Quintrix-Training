@@ -3,6 +3,8 @@ package theInternet.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import theInternet.framework.PageObjectBase;
+
 public class ChallengingDom extends PageObjectBase{
 	
 	public ChallengingDom(WebDriver driver, String url) {
@@ -10,7 +12,7 @@ public class ChallengingDom extends PageObjectBase{
 	}
 	
 	public ChallengingDom navigate() {
-		super.navigate("challenging_dom");
+		super.navigate("/challenging_dom");
 		return this;
 	}
 	

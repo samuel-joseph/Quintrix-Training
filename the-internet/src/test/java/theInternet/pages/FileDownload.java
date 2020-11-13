@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import theInternet.framework.PageObjectBase;
+
 public class FileDownload extends PageObjectBase{
 	
 	public FileDownload(WebDriver driver, String url) {
@@ -13,7 +15,7 @@ public class FileDownload extends PageObjectBase{
 	}
 	
 	public FileDownload navigate() {
-		super.navigate("download");
+		super.navigate("/download");
 		return this;
 	}
 	

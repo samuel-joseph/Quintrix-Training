@@ -9,6 +9,8 @@ import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import theInternet.framework.PageObjectBase;
+
 public class ExitAd extends PageObjectBase {
 
 	public ExitAd(WebDriver driver, String url) {
@@ -16,7 +18,7 @@ public class ExitAd extends PageObjectBase {
 	}
 	
 	public ExitAd navigate() {
-		super.navigate("exit_intent");
+		super.navigate("/exit_intent");
 		return this;
 	}
 	
