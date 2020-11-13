@@ -392,6 +392,21 @@ public class TheInternet {
 //		//Assert
 //		Assert.assertEquals(selectedOption, expectedSelection);
 //	}
+//	
+//	@Test
+//	public void tc28MultipleWindows() {
+//		//Arrange
+//		String selectedOption = "http://the-internet.herokuapp.com/windows";
+//		
+//		//Act
+//		String expectedSelection = new MultipleWindowsPage(driver, this.url)
+//				.navigate()
+//				.clickHere()
+//				.getString();
+//		
+//		//Assert
+//		Assert.assertEquals(selectedOption, expectedSelection);
+//	}
 	
 	
 	
