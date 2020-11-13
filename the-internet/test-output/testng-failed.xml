@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Automation.TheInternet">
+      <class name="theInternet.pages.TheInternet">
         <methods>
           <include name="beforeTest"/>
-          <include name="tc28MultipleWindows"/>
+          <include name="tc13EntryAd"/>
           <include name="afterTest"/>
+          <include name="tc14ExitIntent"/>
         </methods>
-      </class> <!-- Automation.TheInternet -->
+      </class> <!-- theInternet.pages.TheInternet -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
