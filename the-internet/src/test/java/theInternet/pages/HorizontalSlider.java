@@ -1,4 +1,4 @@
-package Automation;
+package theInternet.pages;
 
 import java.awt.Desktop.Action;
 

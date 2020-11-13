@@ -1,4 +1,4 @@
-package Automation;
+package theInternet.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
