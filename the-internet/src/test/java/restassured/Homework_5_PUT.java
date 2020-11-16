@@ -8,34 +8,28 @@ import java.util.Map;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
+import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 
 public class Homework_5_PUT {
-
+	
 	@Test
-	public void test_1_put() {
+
+	public void homework_5() {
 		
 		Map<String, Object> map = new HashMap<String, Object>();
-		
 		map.put("name", "Morpheus2");
-		
-		System.out.println(map);
-		
 		JSONObject request = new JSONObject(map);
+		String oldTimeStamp = RestAssured.get("/api/users/2")
+	              .then()
+	              .extract()
+	              .path("updatedAt");
 		
+		given().header("ContentType", "application/json").contentType(ContentType.JSON).accept(ContentType.JSON)
+			.body("name")
+			.when().put("https://reqres.in/api/users/2").then().statusCode(200).log().all();
 		
-		System.out.println(request);
-		System.out.println(request.toJSONString());
-		
-		given().
-			header("Content-type", "application/json").
-			contentType(ContentType.JSON).
-			accept(ContentType.JSON).
-			body(request.toJSONString()).
-		when().
-			put("https://reqres.in/api/users/2").
-		then().
-			statusCode(200).
-			log().all();
+//		System.out.println(map);
+//		System.out.println(request);
 	}
 }
