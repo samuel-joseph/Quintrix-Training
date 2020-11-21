@@ -22,7 +22,7 @@ public class BrowserFactory {
 		case "Firefox":
 			driver = drivers.get("Firefox");
 			if (driver == null) {
-				System.setProperty("webdriver.ie.firefix", "/Users/joe/git/firefox");
+				System.setProperty("webdriver.ie.firefox", "/Users/joe/git/firefox");
 				driver = new FirefoxDriver();
 				drivers.put("Firefox", driver);
 			}

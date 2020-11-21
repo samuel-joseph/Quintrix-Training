@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public abstract class TestBase {
+public abstract class Chrome {
 	protected ChromeDriver webDriver;
 	protected String baseUrl;
 
