@@ -22,7 +22,10 @@ public class EntryAd extends PageObjectBase {
 
 	public EntryAd select() {
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		//Entry ad is kinda buggy because the synchronization kinda messed up
+		
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 
 		WebElement element = driver.findElement(By.xpath("//*[@id=\"modal\"]/div[2]/div[3]/p"));

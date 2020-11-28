@@ -188,7 +188,7 @@ public class TheInternet {
 	@Test
 	public void tc14ExitIntent() throws InterruptedException, AWTException {
 		//Arrange
-		String expectedSelection = "This is a modal window";
+		String expectedSelection = "Exit Intent";
 		
 		//Act
 		String selectedOption = new ExitAd(driver, this.url)

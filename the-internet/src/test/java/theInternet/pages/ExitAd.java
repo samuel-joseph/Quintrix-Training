@@ -29,12 +29,12 @@ public class ExitAd extends PageObjectBase {
 		driver.manage().window().maximize();
 		Robot robot = new Robot();
 		robot.mouseMove(700, 0);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElement(By.xpath("//*[@id=\"ouibounce-modal\"]/div[2]/div[3]/p")).click();
+//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+//		driver.findElement(By.xpath("//*[@id=\"ouibounce-modal\"]/div[2]/div[3]/p")).click();
 		return this;
 	}
 	
 	public String getOption() {
-		return driver.findElement(By.xpath("//*[@id=\"ouibounce-modal\"]/div[2]/div[1]/h3")).getText();
+		return driver.findElement(By.xpath("//*[@id=\"content\"]/div[1]/h3")).getText();
 	}
 }
