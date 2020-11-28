@@ -1,4 +1,5 @@
 package theInternet.pages;
+import io.github.sukgu.*;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -20,14 +21,23 @@ public class ShadowDom extends PageObjectBase{
 	}
 	
 	public ShadowDom editText() {
-		JavascriptExecutor js = (JavascriptExecutor) driver; 
-		WebElement clearData = driver.findElement(By.xpath("//*[@id=\"content\"]/my-paragraph[1]/span"));
 		
-		clearData.sendKeys("Hello World!");
+		//I have to use a dependency for shadowdom just to retrieve it
+		Shadow shadow = new Shadow(driver);
+		WebElement seeShadow = shadow.findElement("span");
+		System.out.println(seeShadow.getText());
+		
 		return this;
 	}
 	
 	public String getString() {
 		return driver.findElement(By.xpath("//*[@id=\"content\"]/h1")).getText();
 	}
+	
+	
+	public WebElement getShadowRootElement(WebElement element) {
+		WebElement ele = (WebElement) ((JavascriptExecutor)driver)
+		    .executeScript("return arguments[0].shadowRoot", element);
+		        return ele;
+		    }
 }

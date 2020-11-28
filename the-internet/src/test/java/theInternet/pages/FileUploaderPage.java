@@ -36,6 +36,7 @@ public class FileUploaderPage extends PageObjectBase{
 	
 	public FileUploaderPage dragFile() {
 		WebElement dragNdrop = driver.findElement(By.id("drag-drop-upload"));
+//		dragNdrop.sendKeys("/Users/joe/Desktop/pika.png");
 		return this;
 
 	}

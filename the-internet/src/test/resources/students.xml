@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<students>
+	<student>
+		<first_name>James</first_name>
+		<last_name>Smith</last_name>
+		<email>js@gmail.com</email>
+		<gender>Male</gender>
+		<contact>0987654321</contact>
+		<birthDate>09 September 1991</birthDate>
+		<subject>Math</subject>
+		<hobby>Sports</hobby>
+		<address>Cagayan de Oro</address>
+		<state>NCR</state>
+		<city>Delhi</city>
+	</student>
+	
+		<student>
+		<first_name>Mary</first_name>
+		<last_name>Carter</last_name>
+		<email>mc@gmail.com</email>
+		<gender>Female</gender>
+		<contact>0987654321</contact>
+		<birthDate>07 April 1992</birthDate>
+		<subject>Science</subject>
+		<hobby>Reading</hobby>
+		<address>Valencia</address>
+		<state>NCR</state>
+		<city>Delhi</city>
+	</student>
+	
+		<student>
+		<first_name>John</first_name>
+		<last_name>Cook</last_name>
+		<email>jc@gmail.com</email>
+		<gender>Male</gender>
+		<contact>0987654321</contact>
+		<birthDate>09 December 1991</birthDate>
+		<subject>Math</subject>
+		<hobby>Sports</hobby>
+		<address>Misamis Oriental</address>
+		<state>NCR</state>
+		<city>Delhi</city>
+	</student>
+	
+	
+	
+</students>
