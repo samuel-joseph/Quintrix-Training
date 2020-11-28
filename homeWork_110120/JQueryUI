@@ -1,0 +1,22 @@
+Test Case ID: 23
+Run Result ID: 1
+Infinite Scroll
+
+----------------
+Summary:
+Test and observe the structure of JQuery works.
+
+Setup:
+https://the-internet.herokuapp.com/jqueryui
+
+Steps:
+1. Click menu
+2. Click Enabled
+3. Hover over Enabled
+4. Click back to query
+5. Go back to step step 2 and 3
+6. Hover or click at Downloads
+6. Press the PDF
+
+Result:
+	It is almost possible to click on every element. Hovering works but clicking the elements are kinda hard to do.

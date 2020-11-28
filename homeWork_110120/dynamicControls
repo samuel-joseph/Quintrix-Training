@@ -1,0 +1,21 @@
+Test Case ID: 10
+Run Result ID: 1
+Dynamic Controls
+
+----------------
+Summary:
+Observe and learn what's gonna happen as you changed the elements asynchronously. Test and observe as you click the elements.
+
+Setup:
+https://the-internet.herokuapp.com/dynamic_controls
+
+Steps:
+1. Click the checkbox.
+2. Click the remove button.
+3. Click the add button
+3. Click Enable button.
+4. Type any string within the place field.
+5. Click Disable.
+
+Result:
+The checkbox when checked is working and once I clicked the remove button a loading element at the button shows up. The same at the button with Enable/disable where in as I click Enable a loading element shows up then allows a user to type in the string. It is a great representation of an asynchronous change where in every event made by the user, within the back an asynchronous change is happening. 

@@ -1,0 +1,24 @@
+Test Case ID: 24
+Run Result ID: 1
+Javascript Alert
+
+----------------
+Summary:
+Test Javascript Alert elements.
+
+Setup:
+https://the-internet.herokuapp.com/javascript_alerts
+
+Steps:
+1. Click "Click for JS Alert"
+2. Press "OK"
+3. Click "Click for JS Confirm"
+4. Press "OK"
+5. Repeat step 3.
+6. Press "cancel"
+7. Click "Click for JS Prompt"
+8. Type something in input placeholder.
+9. Press "OK"
+
+Result:
+	All of the three Javascript Alerts are working accordingly.

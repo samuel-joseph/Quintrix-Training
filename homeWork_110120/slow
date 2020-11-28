@@ -1,0 +1,17 @@
+Test Case ID: 31
+Run Result ID: 1
+Slow
+
+----------------
+Summary:
+Test and observe the loading speed of the page.
+
+Setup:
+https://the-internet.herokuapp.com/slow
+
+Steps:
+1. Right Click and choose inspect
+2. Observe the DOM
+
+Result:
+	Page is working, further automation is required.

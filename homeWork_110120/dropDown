@@ -1,0 +1,18 @@
+Test Case ID: 8
+Run Result ID: 1
+Drop Down
+
+----------------
+Summary:
+Check to see if the drop down works correctly and that choosing any of the options from the dropdown list would change the title of the dropdown DOM.
+
+Setup:
+https://the-internet.herokuapp.com/dropdown
+
+Steps:
+1. Click the element dropdown where it says "Please select an option".
+2. Hover around the Options.
+3. Click any from the Options.
+
+Result:
+Drop down list is working as intended as it shows the options dropdown, hovering around the options changes the background color to blue of the certain hovered option and clicking on that desired option closes the list and changes the title of the DOM into the desired option.

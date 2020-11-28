@@ -1,0 +1,24 @@
+Test Case ID: 29
+Run Result ID: 1
+Redirector
+----------------
+Summary:
+Test and observe the Status Codes and to learn from it.
+
+Setup:
+https://the-internet.herokuapp.com/redirector
+
+Steps:
+0. Click "here"
+1. Click "200"
+2. Click "here"
+3. Click "301"
+4. Click "here"
+5. Click "404"
+6. Click "here"
+7. Click "500"
+8. Click "here"
+9. Click "here"
+
+Result:
+	All the links are working at the moment, further test are needed.
