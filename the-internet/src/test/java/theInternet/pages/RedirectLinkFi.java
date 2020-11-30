@@ -27,7 +27,7 @@ public class RedirectLinkFi extends PageObjectBase {
 
 		click.click();
 
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 //		WebElement ul = driver.findElement(By.tagName("ul"));
 //		List<WebElement> li = ul.findElements(By.tagName("li"));
@@ -40,6 +40,7 @@ public class RedirectLinkFi extends PageObjectBase {
 //		}
 
 		for (Integer i = 1; i <= 4; i++) {
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			String xpath = String.format("//*[@id=\"content\"]/div/ul/li[%s]/a", i);
 			WebElement li = driver.findElement(By.xpath(xpath));
 			
@@ -47,7 +48,7 @@ public class RedirectLinkFi extends PageObjectBase {
 			executor.executeScript("arguments[0].scrollIntoView(true);", li); 
 			
 			li.click();
-			driver.findElement(By.tagName("a")).click();
+			driver.navigate().back();;
 		}
 
 		return this;

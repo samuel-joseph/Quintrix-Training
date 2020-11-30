@@ -188,7 +188,7 @@ public class TheInternet {
 	@Test
 	public void tc14ExitIntent() throws InterruptedException, AWTException {
 		//Arrange
-		String expectedSelection = "This is a modal window";
+		String expectedSelection = "Exit Intent";
 		
 		//Act
 		String selectedOption = new ExitAd(driver, this.url)
@@ -425,35 +425,35 @@ public class TheInternet {
 		Assert.assertEquals(selectedOption, expectedSelection);
 	}
 	
-//	@Test
-//	public void tc30RedirectLinkFi() {
-//		//Arrange
-//		String selectedOption = "http://the-internet.herokuapp.com/redirector";
-//		
-//		//Act
-//		String expectedSelection = new RedirectLinkFi(driver, this.url)
-//				.navigate()
-//				.clickLink()
-//				.getString();
-//		
-//		//Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
-//	
-//	@Test
-//	public void tc31ShadowDom() {
-//		//Arrange
-//		String selectedOption = "Simple template";
-//		
-//		//Act
-//		String expectedSelection = new ShadowDom(driver, this.url)
-//				.navigate()
-//				.editText()
-//				.getString();
-//		
-//		//Assert
-//		Assert.assertEquals(selectedOption, expectedSelection);
-//	}
+	@Test
+	public void tc30RedirectLinkFi() {
+		//Arrange
+		String selectedOption = "http://the-internet.herokuapp.com/status_codes";
+		
+		//Act
+		String expectedSelection = new RedirectLinkFi(driver, this.url)
+				.navigate()
+				.clickLink()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
+	
+	@Test
+	public void tc31ShadowDom() {
+		//Arrange
+		String selectedOption = "Simple template";
+		
+		//Act
+		String expectedSelection = new ShadowDom(driver, this.url)
+				.navigate()
+				.editText()
+				.getString();
+		
+		//Assert
+		Assert.assertEquals(selectedOption, expectedSelection);
+	}
 	
 	
 	
