@@ -223,7 +223,7 @@ public class TheInternet {
 		String selectedOption = new FileUploaderPage(driver, this.url)
 				.navigate()
 				.chooseFile()
-				.dragFile()
+//				.dragFile()
 				.getString();
 		
 		//Assert
