@@ -11,5 +11,3 @@ Feature: feature test add and delete button functionality
 		Examples:
 		|addButton|delete|total|
 		|10	|	5		 |5|
-		
-	

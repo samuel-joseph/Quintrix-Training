@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -25,6 +26,14 @@ public class BasePageCucumber {
 	
 	public void close() {
 		driver.close();
+	}
+	
+	public void clickButton(String xpath) {
+		driver.findElement(By.xpath(xpath)).click();
+	}
+	
+	public String getText(String xpath) {
+		return driver.findElement(By.xpath(xpath)).getText();
 	}
 
 }
