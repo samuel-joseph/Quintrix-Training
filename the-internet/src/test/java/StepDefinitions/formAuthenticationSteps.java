@@ -30,7 +30,7 @@ public class formAuthenticationSteps {
 
 
 
-	@When("User clicks login")
+	@And("User clicks login")
 	public void user_clicks_login() {
 		System.out.println("Inside step - clicks login");
 		formAuth.submit("//*[@id=\"login\"]/button/i");
