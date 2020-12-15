@@ -23,6 +23,5 @@ public class BasicAuth extends PageObjectBase{
 	
 	public String getOption() {
 		return driver.findElement(By.xpath("//*[@id=\"content\"]/div/p")).getText();
-		
 	}
 }
