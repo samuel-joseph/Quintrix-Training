@@ -1,5 +1,7 @@
+@SmokeFeature
 Feature: Login Test
 I want to test if the authentication works
+@smoketest
 Scenario: Login is successful
 
 Given User is in login page

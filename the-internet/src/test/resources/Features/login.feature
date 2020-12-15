@@ -2,10 +2,10 @@
 #Date
 #Description
 
-@SmokeFeature
+#@SmokeFeature
 Feature: feature to test login functionality
 
-	@smoketest
+#	@smoketest
   Scenario: Check login is successful with valid credentials
   
   	Given user is on login page

@@ -1,7 +1,8 @@
+@SmokeFeature
 Feature: Inifinite Scroll Test
 Test the limitation of scroll
 
-
+	@smoketest
   Scenario Outline: Scrolls infinitely
     Given User is in scroll page
     When User scrolls the page <scroll> times
@@ -9,5 +10,5 @@ Test the limitation of scroll
 
     Examples: 
       | scroll| title |
-      | 20 |Infinite Scroll|
+      | 100 |Infinite Scroll|
  

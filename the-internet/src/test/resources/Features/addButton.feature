@@ -1,6 +1,6 @@
-
+@SmokeFeature
 Feature: feature test add and delete button functionality
-
+	@smoketest
 	Scenario Outline: Add and delete button is successful
 	
 		Given user is on add remove element page

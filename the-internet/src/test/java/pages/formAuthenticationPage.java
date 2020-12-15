@@ -22,7 +22,9 @@ public class formAuthenticationPage extends BasePageCucumber{
 	}
 	
 	public String getString(String xpath) {
-		return super.getText(xpath);
+		String actual = super.getText(xpath);
+		super.close();
+		return actual;
 	}
 	
 }

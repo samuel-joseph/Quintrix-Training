@@ -41,8 +41,8 @@ public class AddRemoveSteps {
 
 	@Then("user validates if number of {int} is correct")
 	public void user_validates_if_number_of_is_correct(Integer total) {
-		Assert.assertEquals(actual, total);
 		add.close();
+		Assert.assertEquals(actual, total);
 	}
 
 }

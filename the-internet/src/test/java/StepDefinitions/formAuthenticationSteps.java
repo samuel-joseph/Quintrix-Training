@@ -13,9 +13,8 @@ public class formAuthenticationSteps {
 	formAuthenticationPage formAuth = new formAuthenticationPage();
 	String expected = "Logout";
 	
-
-	@Given("User is on login page")
-	public void user_is_on_login_page() {
+	@Given("User is in login page")
+	public void user_is_in_login_page() {
 		System.out.println("Inside step - browser is open");
 		formAuth.navigate(url);
 	}
@@ -40,6 +39,8 @@ public class formAuthenticationSteps {
 	public void user_verifies_if_he_is_logged_in() {
 		String actual = formAuth.getText("//*[@id=\"content\"]/div/a/i");
 		Assert.assertEquals(expected, actual);
+		
+
 	}
 	
 }
