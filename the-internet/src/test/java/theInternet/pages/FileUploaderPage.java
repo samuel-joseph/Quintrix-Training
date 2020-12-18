@@ -27,7 +27,7 @@ public class FileUploaderPage extends PageObjectBase{
 		WebElement upload = driver.findElement(By.id("file-upload"));
 		WebElement submit = driver.findElement(By.xpath("//*[@id=\"file-submit\"]"));
 		
-		upload.sendKeys("/Users/joe/Desktop/pika.png");
+		upload.sendKeys("/Users/joe/Desktop/arcanite.jpeg");
 		submit.click();
 		
 		driver.navigate().back();
